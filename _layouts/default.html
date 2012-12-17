@@ -9,7 +9,9 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
 <![endif]-->
 <link href="/favicon.ico" rel="shortcut icon">
-<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="assets/bootstrap-2.2.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/bootstrap-2.2.2/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/stylesheets/default.css" rel="stylesheet">
 <script type="text/javascript">
 var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-36515974-2']);
@@ -33,15 +35,11 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
       <a class="brand" href="/">DaumEditor</a>
       <div class="container nav-collapse">
         <ul class="nav">
-          <li>
-            <a href="/getting-started.html">Get started</a>
-          </li>
-          <li>
-            <a href="/configuration.html">Configuration</a>
-          </li>
-          <li>
-            <a href="/demo.html">Demo</a>
-          </li>
+          <li><a href="/getting-started.html">Get started</a></li>
+          <li><a href="/demo.html">Demo</a></li>
+          <li><a href="/configuration.html">Configuration</a></li>
+          <li><a href="/build.html">Build</a></li>
+          <li><a href="/license.html">License</a></li>
         </ul>
         <ul class="nav pull-right">
           <li class="">
@@ -54,10 +52,13 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 </div>
 <div class="container">
   <div class="content">
+<!-- content start -->
 {{content}}
+<!-- content -->
   </div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="assets/bootstrap-2.2.2/js/bootstrap.min.js"></script>
 <script>
 $(function () {
 	$('.navbar ul.nav > li > a').each(function (index) {
