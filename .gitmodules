@@ -1,0 +1,3 @@
+[submodule "assets/DaumEditor"]
+	path = assets/DaumEditor
+	url = https://github.com/daumeditor/DaumEditor.git
