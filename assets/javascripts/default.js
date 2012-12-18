@@ -7,8 +7,8 @@ $(function () {
 });
 
 function lastTag(callback) {
-    $.get('https://api.github.com/repos/daumeditor/DaumEditor/git/refs/tags', function (tags) {
-        tags = tags.map(function (tag) {
+    $.get('https://api.github.com/repos/daumeditor/DaumEditor/git/refs/tags', function (result) {
+        tags = result.data.map(function (tag) {
             var version = tag.ref.replace(/^refs\/tags\//, '');
             return {
                 version: version,
@@ -23,5 +23,5 @@ function lastTag(callback) {
         if (lastTag) {
             callback(lastTag);
         }
-    });
+    }, 'jsonp');
 }
